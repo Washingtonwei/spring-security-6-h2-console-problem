@@ -4,7 +4,7 @@ import edu.tcu.cs.springsecurity6h2consoleproblem.dao.ArtifactDao;
 import edu.tcu.cs.springsecurity6h2consoleproblem.domain.Artifact;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.util.List;
 
 @Service

@@ -12,11 +12,11 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .antMatchers("/h2-console/**").permitAll()
+                        .requestMatchers("/h2-console/**").permitAll()
                 )
                 .headers(headers -> headers.frameOptions().disable())
                 .csrf(csrf -> csrf
-                        .ignoringAntMatchers("/h2-console/**"));
+                        .ignoringRequestMatchers("/h2-console/**"));
         return http.build();
     }
 

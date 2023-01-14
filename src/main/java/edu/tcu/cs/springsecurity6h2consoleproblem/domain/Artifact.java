@@ -1,6 +1,6 @@
 package edu.tcu.cs.springsecurity6h2consoleproblem.domain;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
